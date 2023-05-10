@@ -44,7 +44,6 @@ const SideBox = styled.div`
   padding: 15px 13px;
   border-radius: 10px;
   width: 100%;
-  margin-bottom: 13px;
   position: absolute;
   top: 0px;
 `;
@@ -58,12 +57,12 @@ const SideBox_Side = styled.div`
 `;
 
 const SideBox_Span = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xs};
+  font-size: ${(props) => props.theme.fontSize.ssm};
   margin: 0 5px;
   margin-right: 15px;
   color: ${(props) => props.color || "white"};
   width: 60%;
-  font-weight: ${(props) => props.theme.fontBold.regular};
+  font-weight: ${(props) => props.theme.fontBold.medium};
 `;
 
 const SideBox_List = styled.div`
@@ -92,7 +91,7 @@ const Navbar = () => {
       <Div height="15%" marginTop="10px" marginBottom="80px">
         <Logo width={80} height={30} />
       </Div>
-      <Div height="35%">
+      <Div height="40%">
         <SideBox>
           <SideBox_Side>
             <Checklist width={20} height={17} />
@@ -105,10 +104,10 @@ const Navbar = () => {
         {checkListMenu ? (
           <>
             <SideBox_List>
-              <SideBox_Span color="#7B7B7B">소통창구 조회</SideBox_Span>
+              <SideBox_Span color="#000000">소통창구 조회</SideBox_Span>
             </SideBox_List>
             <SideBox_List>
-              <SideBox_Span color="#7B7B7B">소통창구 상세</SideBox_Span>
+              <SideBox_Span color="#000000">소통창구 상세</SideBox_Span>
             </SideBox_List>
           </>
         ) : (
@@ -116,7 +115,7 @@ const Navbar = () => {
         )}
       </Div>
 
-      <Div height="35%">
+      <Div height="40%">
         <SideBox>
           <SideBox_Side>
             <Complain width={22} height={16} />
@@ -130,12 +129,12 @@ const Navbar = () => {
           <>
             <SideBox_List>
               <SideBox_Side></SideBox_Side>
-              <SideBox_Span color="#7B7B7B">컴플레인 조회</SideBox_Span>
+              <SideBox_Span color="#000000">컴플레인 조회</SideBox_Span>
               <SideBox_Side></SideBox_Side>
             </SideBox_List>
             <SideBox_List>
               <SideBox_Side></SideBox_Side>
-              <SideBox_Span color="#7B7B7B">컴플레인 상세</SideBox_Span>
+              <SideBox_Span color="#000000">컴플레인 상세</SideBox_Span>
               <SideBox_Side></SideBox_Side>
             </SideBox_List>
           </>

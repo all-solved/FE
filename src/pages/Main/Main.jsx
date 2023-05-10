@@ -14,12 +14,11 @@ const MainBox = styled.div`
   padding-left: ${(props) => props.paddingLeft || "0px"};
   margin-bottom: ${(props) => props.marginBottom || "0px"};
   height: ${(props) => props.height};
-  width: 100%;
 `;
 
 const Title = styled.span`
   font-size: ${(props) => props.theme.fontSize.lg};
-  font-weight: ${(props) => props.theme.fontBold.black};
+  font-weight: ${(props) => props.theme.fontBold.bold};
   margin-top: 60px;
 `;
 
@@ -47,28 +46,28 @@ const DivBox = styled.div`
 `;
 
 const UserFont1 = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xxxs};
-  font-weight: ${(props) => props.theme.fontBold.semiBold};
+  font-size: ${(props) => props.theme.fontSize.xxs};
+  font-weight: ${(props) => props.theme.fontBold.medium};
   color: ${(props) => props.color || "white"};
   margin-right: ${(props) => props.marginRight};
 `;
 
 const UserFont2 = styled.span`
-  font-size: ${(props) => props.theme.fontSize.md};
-  font-weight: ${(props) => props.theme.fontBold.semiBold};
+  font-size: ${(props) => props.theme.fontSize.lg};
+  font-weight: ${(props) => props.theme.fontBold.medium};
   color: white;
 `;
 
 const UserFont3 = styled.span`
   font-size: ${(props) => props.theme.fontSize.xxs};
-  font-weight: ${(props) => props.theme.fontBold.medium};
+  font-weight: ${(props) => props.theme.fontBold.regular};
   color: white;
-  margin-top: 3px;
+  margin-top: 1px;
 `;
 
 const UserFont4 = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xxxs};
-  font-weight: ${(props) => props.theme.fontBold.semiBold};
+  font-size: ${(props) => props.theme.fontSize.xxs};
+  font-weight: ${(props) => props.theme.fontBold.regular};
   color: white;
   margin-right: ${(props) => props.marginRight};
 `;
@@ -91,8 +90,8 @@ const FontDiv = styled.div`
 
 // menu title
 const MenuTitle = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xs};
-  font-weight: ${(props) => props.theme.fontBold.semiBold};
+  font-size: ${(props) => props.theme.fontSize.ssm};
+  font-weight: ${(props) => props.theme.fontBold.medium};
   color: ${(props) => props.color};
 `;
 
@@ -218,7 +217,7 @@ const Main = () => {
             <UserFont2>User 님</UserFont2>
             <UserFont3>오늘의 민원을 해결해주세요 :)</UserFont3>
           </DivBox>
-          <DivBox flex="column" marginLeft="120px" marginTop="40px">
+          <DivBox flex="column" marginLeft="115px" marginTop="35px">
             <DivBox align="center" justify="space-between">
               <UserFont4 marginRight="5px">해결되지 않은 민원</UserFont4>
               <FontDiv>
@@ -235,7 +234,7 @@ const Main = () => {
         </UserBox>
         <CommuBox>
           <MenuTitle>나의 소통창구</MenuTitle>
-          <DivBox align="center" marginTop="20px">
+          <DivBox align="center" marginTop="15px">
             <DivBox>
               <Commu_SubBox>
                 <DummyImg />

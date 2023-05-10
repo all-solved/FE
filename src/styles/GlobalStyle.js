@@ -52,7 +52,7 @@ html, body {
 
 body{
     margin: 0 auto;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
     a {
     text-decoration: none;
