@@ -17,8 +17,6 @@ time, mark, audio, video, input, textarea, select {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -44,17 +42,17 @@ table {
   border-spacing: 0;
 }
 
-* {
-  box-sizing: border-box ;
+div {
+  box-sizing : border-box;
 }
 
 html, body {
   height: 100%;
-//   font-family: 'Roboto', sans-serif;
 }
 
 body{
     margin: 0 auto;
+    font-family: 'Inter', sans-serif;
 }
     a {
     text-decoration: none;
@@ -72,3 +70,5 @@ body{
 
 
 `;
+
+export default GlobalStyle;
