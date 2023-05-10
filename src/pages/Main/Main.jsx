@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "../../containers/Navbar/Navbar";
 import { ReactComponent as UserIcon } from "../images/User.svg";
 import { ReactComponent as DummyImg } from "../images/Dummy.svg";
 import { ReactComponent as Plus } from "../images/Plus.svg";
@@ -192,13 +191,12 @@ const ComplainBox = styled.div`
 const Main = () => {
   return (
     <>
-      <Navbar />
-      <MainBox height="130px" marginLeft="16%" paddingLeft="5%">
+      <MainBox height="130px" marginLeft="250px" paddingLeft="5%">
         <Title>나의 민원 관리. 옳소.</Title>
       </MainBox>
       <MainBox
         height="100%"
-        marginLeft="16%"
+        marginLeft="250px"
         paddingLeft="5%"
         align="flex-end"
         marginBottom="70px"
@@ -268,7 +266,7 @@ const Main = () => {
       </MainBox>
       <MainBox
         height="100%"
-        marginLeft="16%"
+        marginLeft="250px"
         paddingLeft="5%"
         align="flex-start"
       >

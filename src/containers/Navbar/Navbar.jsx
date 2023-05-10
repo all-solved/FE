@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
 import { ReactComponent as Checklist } from "../images/Checklist.svg";
 import { ReactComponent as BottomArrow } from "../images/BottomArrow.svg";
 import { ReactComponent as TopArrow } from "../images/TopArrow.svg";
@@ -11,7 +13,7 @@ const Side = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 17%;
+  width: 250px;
   height: 100vh;
   padding: 0 15px;
   border-right: 1px solid #e4e4e4;
@@ -45,7 +47,7 @@ const SideBox = styled.div`
   border-radius: 10px;
   width: 100%;
   position: absolute;
-  top: 0px;
+  top: -10px;
 `;
 
 const SideBox_Side = styled.div`
@@ -68,9 +70,8 @@ const SideBox_Span = styled.span`
 const SideBox_List = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 7px 15px;
+  padding: 5px 0px;
+  padding-left: 19%;
   width: 100%;
 `;
 
@@ -89,9 +90,11 @@ const Navbar = () => {
   return (
     <Side>
       <Div height="15%" marginTop="10px" marginBottom="80px">
-        <Logo width={80} height={30} />
+        <Link to="/">
+          <Logo width={80} height={30} />
+        </Link>
       </Div>
-      <Div height="40%">
+      <Div height="30%">
         <SideBox>
           <SideBox_Side>
             <Checklist width={20} height={17} />
@@ -104,10 +107,14 @@ const Navbar = () => {
         {checkListMenu ? (
           <>
             <SideBox_List>
-              <SideBox_Span color="#000000">소통창구 조회</SideBox_Span>
+              <Link to="/counter">
+                <SideBox_Span color="#000000">소통창구 조회</SideBox_Span>
+              </Link>
             </SideBox_List>
             <SideBox_List>
-              <SideBox_Span color="#000000">소통창구 상세</SideBox_Span>
+              <Link to="/counter_detail">
+                <SideBox_Span color="#000000">소통창구 상세</SideBox_Span>
+              </Link>
             </SideBox_List>
           </>
         ) : (
@@ -115,7 +122,7 @@ const Navbar = () => {
         )}
       </Div>
 
-      <Div height="40%">
+      <Div height="30%">
         <SideBox>
           <SideBox_Side>
             <Complain width={22} height={16} />
@@ -128,14 +135,14 @@ const Navbar = () => {
         {complainMenu ? (
           <>
             <SideBox_List>
-              <SideBox_Side></SideBox_Side>
-              <SideBox_Span color="#000000">컴플레인 조회</SideBox_Span>
-              <SideBox_Side></SideBox_Side>
+              <Link>
+                <SideBox_Span color="#000000">컴플레인 조회</SideBox_Span>
+              </Link>
             </SideBox_List>
             <SideBox_List>
-              <SideBox_Side></SideBox_Side>
-              <SideBox_Span color="#000000">컴플레인 상세</SideBox_Span>
-              <SideBox_Side></SideBox_Side>
+              <Link>
+                <SideBox_Span color="#000000">컴플레인 상세</SideBox_Span>
+              </Link>
             </SideBox_List>
           </>
         ) : (
