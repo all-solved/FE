@@ -7,7 +7,7 @@ WORKDIR /var/lib/jenkis/workspace/All-Solved-FE
 RUN rm /etc/nginx/conf.d/default.conf
 
 #host pc의 nginx.conf를 아래 경로에 복사
-COPY ./nginx.conf /etc/nginx/conf.d
+COPY ./nginx.conf /etc/nginx/conf.d/
 
 # 3000포트 개방
 EXPOSE 3000
