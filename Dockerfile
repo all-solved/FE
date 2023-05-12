@@ -1,14 +1,7 @@
 FROM nginx
 
-RUN mkdir /allso
+WORKDIR /var/lib/jenkis/workspace/All-Solved-FE
 
-WORKDIR /allso
-
-#/allso/build
-RUN mkdir ./build
-
-#host pc의 현재경로의 build 폴더를 workdir의 build폴더로 복사
-ADD ./build ./build
 
 #nginx의 default.conf를 삭제
 RUN rm /etc/nginx/conf.d/default.conf
