@@ -1,6 +1,6 @@
 FROM nginx
 
-WORKDIR /var/lib/jenkins/workspace/All-Solved-FE
+#WORKDIR /var/lib/jenkins/workspace/All-Solved-FE
 
 
 #nginx의 default.conf를 삭제
