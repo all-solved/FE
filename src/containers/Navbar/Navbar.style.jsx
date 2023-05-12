@@ -56,7 +56,7 @@ export const SideBox_Span = styled.span`
   margin-right: 15px;
   color: ${(props) => props.color || "white"};
   width: 60%;
-  font-weight: ${(props) => props.theme.fontBold.medium};
+  font-weight: ${(props) => props.theme.fontBold.regular};
 `;
 
 export const SideBox_List = styled.div`
