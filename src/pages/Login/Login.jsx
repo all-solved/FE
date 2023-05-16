@@ -10,6 +10,7 @@ import {
 } from "./Login.style";
 
 const Login = () => {
+<<<<<<< HEAD
   const redirectURI = "http://localhost:3000/allso/auth/kakao_login";
   const loginOnclick = async () => {
     try {
@@ -30,6 +31,9 @@ const Login = () => {
       <KakaoLoginBtn onClick={loginOnclick}></KakaoLoginBtn>
     </LoginWrapper>
   );
+=======
+  return <div>Login~~~</div>;
+>>>>>>> 5e04af34b6bcfec4c90a1254ea7620ca9b963acb
 };
 
 export default Login;
