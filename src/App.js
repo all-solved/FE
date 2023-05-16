@@ -14,9 +14,7 @@ import Header from "./containers/Header/Header";
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
       <Login></Login>
-=======
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <BrowserRouter>
@@ -28,8 +26,6 @@ function App() {
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
-    
->>>>>>> 2f419b902367b74ad2e0200f681ea66ca85f7bf8
     </div>
   );
 }

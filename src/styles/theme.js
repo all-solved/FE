@@ -1,10 +1,7 @@
 const fontSize = {
-<<<<<<< HEAD
   xxs: "0.625rem", // 10
-=======
   xxxs: "0.625rem", // 10
   xxs: "0.7rem",
->>>>>>> 2f419b902367b74ad2e0200f681ea66ca85f7bf8
   xs: "0.75rem", // 12
   ssm: "0.8rem",
   sm: "0.875rem", // 14
@@ -14,8 +11,6 @@ const fontSize = {
   xxl: "1.75",
 };
 
-<<<<<<< HEAD
-=======
 const fontBold = {
   thin: "100",
   light: "300",
@@ -25,7 +20,6 @@ const fontBold = {
   black: "900",
 };
 
->>>>>>> 2f419b902367b74ad2e0200f681ea66ca85f7bf8
 const colors = {
   mainBlue: "#3A3E84",
   mainLightGrey: "CACACA",

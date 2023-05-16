@@ -17,11 +17,8 @@ time, mark, audio, video, input, textarea, select {
   margin: 0;
   padding: 0;
   border: 0;
-<<<<<<< HEAD
   font-size: 100%;
   // font: inherit;
-=======
->>>>>>> 2f419b902367b74ad2e0200f681ea66ca85f7bf8
   vertical-align: baseline;
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
@@ -56,11 +53,8 @@ div {
 
 html, body {
   height: 100%;
-<<<<<<< HEAD
   // font-size:62.5%;
 
-=======
->>>>>>> 2f419b902367b74ad2e0200f681ea66ca85f7bf8
 }
 
 body{
@@ -83,8 +77,5 @@ body{
 
 
 `;
-<<<<<<< HEAD
-=======
 
->>>>>>> 2f419b902367b74ad2e0200f681ea66ca85f7bf8
 export default GlobalStyle;

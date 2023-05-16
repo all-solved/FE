@@ -13,11 +13,8 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< HEAD
     "axios": "^1.4.0",
-=======
     "antd": "^5.4.7",
->>>>>>> 2f419b902367b74ad2e0200f681ea66ca85f7bf8
     "npm": "^9.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
