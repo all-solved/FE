@@ -18,7 +18,7 @@ COPY /allso/build /usr/share/nginx/html
 
 
 # 3000포트 개방
-EXPOSE 80
+EXPOSE 3000
 
 # 컨테이너 실행시 자동으로 실행항 command. nginx시작
 CMD ["nginx", "-g", "daemon off;"]
