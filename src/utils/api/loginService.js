@@ -16,6 +16,7 @@ const login = async (access_token) => {
       },
     );
     const accessToken = response.data?.result.accessToken;
+    console.log(accessToken);
     localStorage.setItem("token", accessToken);
   } catch (e) {
     console.error(e);
