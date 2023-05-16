@@ -6,6 +6,10 @@ RUN mkdir /allso
 WORKDIR /allso
 ADD ./build ./build
 
+RUN npm install
+
+RUN npm run build
+
 COPY ./default.conf /etc/nginx/conf.d
 
 #host pc의 nginx.conf를 아래 경로에 복사
