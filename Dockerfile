@@ -11,7 +11,9 @@ RUN rm /etc/nginx/conf.d/default/conf
 COPY ./default.conf /etc/nginx/conf.d
 
 #host pc의 nginx.conf를 아래 경로에 복사
-COPY ./default.conf /etc/nginx/conf.d
+COPY /allso/build /usr/share/nginx/html
+
+
 
 # 3000포트 개방
 EXPOSE 3000
