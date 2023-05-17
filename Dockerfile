@@ -4,17 +4,15 @@ FROM nginx
 RUN mkdir /allso
 
 WORKDIR /allso
+
+RUN mkdir ./build
+
 ADD ./build ./build
-
-RUN npm install
-
-RUN npm run build
 
 COPY ./nginx.conf /etc/nginx/conf.d
 
 #host pc의 nginx.conf를 아래 경로에 복사
-COPY /allso/build /usr/share/nginx/html
-
+COPY ./build /usr/share/nginx/html
 
 
 # 3000포트 개방
