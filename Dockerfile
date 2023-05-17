@@ -10,7 +10,7 @@ RUN npm install
 
 RUN npm run build
 
-COPY ./default.conf /etc/nginx/conf.d
+COPY ./nginx.conf /etc/nginx/conf.d
 
 #host pc의 nginx.conf를 아래 경로에 복사
 COPY /allso/build /usr/share/nginx/html
