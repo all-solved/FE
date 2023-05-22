@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as Logo } from "assets/images/svg/Logo.svg";
-
+import { ReactComponent as BoldLogo } from "assets/images/svg/BoldLogo.svg";
 export const Side = styled.div`
   display: flex;
   flex-direction: column;
@@ -28,6 +28,14 @@ export const Div = styled.div`
   justify-content: center;
   width: 100%;
   position: relative;
+`;
+
+export const LogoWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 16rem;
+  margin-top: 2rem;
 `;
 
 export const SideBox = styled.div`
@@ -74,7 +82,7 @@ export const SideBox_List = styled.div`
   cursor: pointer;
 `;
 
-export const LogoImg = styled(Logo)`
+export const LogoImg = styled(BoldLogo)`
   width: 14rem;
   height: 8rem;
   cursor: pointer;
