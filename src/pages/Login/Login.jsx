@@ -10,7 +10,7 @@ import {
 } from "./Login.style";
 
 const Login = () => {
-  const redirectURI = "http://localhost:3000/allso/auth/kakao_login";
+  const redirectURI = "http://semtle.catholic.ac.kr:3000/allso/auth/kakao_login";
   const loginOnclick = async () => {
     try {
       loginService.login();
