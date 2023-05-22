@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as MainImgLogin } from "../../assets/svg/mainimg.svg";
-import KaKaoImg from "../../assets/kakao_login_medium_wide.png";
+import { ReactComponent as MainImgLogin } from "assets/images/svg/mainimg.svg";
+import KaKaoImg from "assets/kakao_login_medium_wide.png";
 
 export const LoginWrapper = styled.div`
   display: flex;

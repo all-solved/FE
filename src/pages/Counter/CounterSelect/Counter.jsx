@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as C from "./Counter.style.jsx";
 import Header from "../../../containers/Header/Header";
-import { ReactComponent as Filter } from "../../images/Filter.svg";
+import { ReactComponent as Filter } from "assets/images/svg/Filter.svg";
 import { columns, data } from "../../DummyData/TableData.jsx";
 
 const handleChange = (value) => {

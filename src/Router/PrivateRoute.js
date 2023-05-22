@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Route, Navigate, useLocation } from "react-router-dom";
+import { Outlet, Navigate, useLocation } from "react-router-dom";
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const isAuthenticated = localStorage.getItem("token");

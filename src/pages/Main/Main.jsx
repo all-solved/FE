@@ -1,9 +1,9 @@
 import React from "react";
 import * as M from "./Main.style.jsx";
 import { CounterData, NoticeData } from "../DummyData/DummyData";
-import { ReactComponent as UserIcon } from "../images/User.svg";
-import { ReactComponent as DummyImg } from "../images/Dummy.svg";
-import { ReactComponent as Plus } from "../images/Plus.svg";
+import { ReactComponent as UserIcon } from "assets/images/svg/User.svg";
+import { ReactComponent as DummyImg } from "assets/images/svg/Dummy.svg";
+import { ReactComponent as Plus } from "assets/images/svg/Plus.svg";
 
 const Main = () => {
   return (
