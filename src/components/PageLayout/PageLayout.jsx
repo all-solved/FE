@@ -2,14 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../../containers/Header/Header";
 import Navbar from "../../containers/Navbar/Navbar";
-
-const PageLayout = (props) => {
-  const { children } = props;
-
+import { Outlet } from "../../../node_modules/react-router-dom/dist/index";
+const PageLayout = () => {
   return (
     <div>
       <Header></Header>
-      {children}
+      <Outlet></Outlet>
       <Navbar></Navbar>
     </div>
   );
