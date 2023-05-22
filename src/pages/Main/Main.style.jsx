@@ -3,7 +3,7 @@ import { ReactComponent as Plus } from "assets/images/svg/Plus.svg";
 
 // 큰 Div
 export const MainWrapper = styled.div`
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-left: 1rem;
 `;
 
@@ -145,6 +145,7 @@ export const NoticeContentBox = styled.div`
   flex-direction: column;
   width: 290px;
   margin-top: 15px;
+  margin-bottom: 20px;
   padding: 0px 20px;
 `;
 

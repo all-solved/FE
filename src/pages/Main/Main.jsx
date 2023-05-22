@@ -3,8 +3,16 @@ import * as M from "./Main.style.jsx";
 import { CounterData, NoticeData } from "../DummyData/DummyData";
 import { ReactComponent as UserIcon } from "assets/images/svg/User.svg";
 import { ReactComponent as DummyImg } from "assets/images/svg/Dummy.svg";
+import { Calendar, theme } from "antd";
 
 const Main = () => {
+  const { token } = theme.useToken();
+  const wrapperStyle = {
+    width: 300,
+    border: `1px solid ${token.colorBorderSecondary}`,
+    borderRadius: token.borderRadiusLG,
+  };
+
   return (
     <M.MainWrapper>
       <M.MainBox paddingLeft="5%" align="flex-end" marginBottom="70px">
@@ -69,6 +77,10 @@ const Main = () => {
               </M.NoticeSpanBox>
             ))}
           </M.NoticeContentBox>
+
+          <div style={wrapperStyle}>
+            <Calendar fullscreen={false} />
+          </div>
         </M.NoticeBox>
         <M.ComplainBox>
           <M.TitleBox>
