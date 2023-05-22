@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 import * as N from "./Navbar.style.jsx";
 import { ReactComponent as Checklist } from "../images/Checklist.svg";
 import { ReactComponent as BottomArrow } from "../images/BottomArrow.svg";
 import { ReactComponent as TopArrow } from "../images/TopArrow.svg";
-import { ReactComponent as Logo } from "../images/Logo.svg";
+
 import { ReactComponent as Complain } from "../images/Complain.svg";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [checkListMenu, setCheckListMenu] = useState(false);
   const [complainMenu, setComplainMenu] = useState(false);
 
@@ -22,9 +24,7 @@ const Navbar = () => {
   return (
     <N.Side>
       <N.Div height="15%" marginTop="10px" marginBottom="80px">
-        <Link to="/">
-          <Logo width={80} height={30} />
-        </Link>
+        <N.LogoImg />
       </N.Div>
       <N.Div height="30%">
         <N.SideBox>
@@ -38,15 +38,17 @@ const Navbar = () => {
         </N.SideBox>
         {checkListMenu ? (
           <>
-            <N.SideBox_List>
-              <Link to="/counter">
-                <N.SideBox_Span color="#000000">소통창구 조회</N.SideBox_Span>
-              </Link>
+            <N.SideBox_List onClick={() => navigate("/allso/counter")}>
+              <N.SideBoxInnerSpan color="#000000">
+                소통창구 조회
+              </N.SideBoxInnerSpan>
             </N.SideBox_List>
-            <N.SideBox_List>
-              <Link to="/counter_detail">
-                <N.SideBox_Span color="#000000">소통창구 상세</N.SideBox_Span>
-              </Link>
+            <N.SideBox_List
+              onClick={() => navigate("/allso/counter/detail/:id")}
+            >
+              <N.SideBoxInnerSpan color="#000000">
+                소통창구 상세
+              </N.SideBoxInnerSpan>
             </N.SideBox_List>
           </>
         ) : (
@@ -66,15 +68,17 @@ const Navbar = () => {
         </N.SideBox>
         {complainMenu ? (
           <>
-            <N.SideBox_List>
-              <Link>
-                <N.SideBox_Span color="#000000">컴플레인 조회</N.SideBox_Span>
-              </Link>
+            <N.SideBox_List onClick={() => navigate("/allso/problem")}>
+              <N.SideBoxInnerSpan color="#000000">
+                컴플레인 조회
+              </N.SideBoxInnerSpan>
             </N.SideBox_List>
-            <N.SideBox_List>
-              <Link>
-                <N.SideBox_Span color="#000000">컴플레인 상세</N.SideBox_Span>
-              </Link>
+            <N.SideBox_List
+              onClick={() => navigate("/allso/problem/detail/:id")}
+            >
+              <N.SideBoxInnerSpan color="#000000">
+                컴플레인 상세
+              </N.SideBoxInnerSpan>
             </N.SideBox_List>
           </>
         ) : (

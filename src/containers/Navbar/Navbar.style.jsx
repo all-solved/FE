@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Logo } from "assets/images/svg/Logo.svg";
 
 export const Side = styled.div`
   display: flex;
@@ -51,12 +52,16 @@ export const SideBox_Side = styled.div`
 `;
 
 export const SideBox_Span = styled.span`
-  font-size: ${(props) => props.theme.fontSize.ssm};
+  font-size: ${(props) => props.theme.fontSize.lg};
   margin: 0 5px;
   margin-right: 15px;
   color: ${(props) => props.color || "white"};
   width: 60%;
   font-weight: ${(props) => props.theme.fontBold.regular};
+`;
+
+export const SideBoxInnerSpan = styled(SideBox_Span)`
+  font-size: ${(props) => props.theme.fontSize.md};
 `;
 
 export const SideBox_List = styled.div`
@@ -65,4 +70,12 @@ export const SideBox_List = styled.div`
   padding: 5px 0px;
   padding-left: 19%;
   width: 100%;
+
+  cursor: pointer;
+`;
+
+export const LogoImg = styled(Logo)`
+  width: 14rem;
+  height: 8rem;
+  cursor: pointer;
 `;

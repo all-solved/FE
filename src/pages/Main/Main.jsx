@@ -8,16 +8,10 @@ import { ReactComponent as Plus } from "assets/images/svg/Plus.svg";
 const Main = () => {
   return (
     <>
-      <M.MainBox height="130px" marginLeft="250px" paddingLeft="5%">
+      <M.MainBox height="130px" paddingLeft="5%">
         <M.Title>나의 민원 관리. 옳소.</M.Title>
       </M.MainBox>
-      <M.MainBox
-        height="100%"
-        marginLeft="250px"
-        paddingLeft="5%"
-        align="flex-end"
-        marginBottom="70px"
-      >
+      <M.MainBox paddingLeft="5%" align="flex-end" marginBottom="70px">
         <M.UserBox>
           <M.DivBox>
             <UserIcon />
@@ -66,12 +60,7 @@ const Main = () => {
           </M.DivBox>
         </M.CommuBox>
       </M.MainBox>
-      <M.MainBox
-        height="100%"
-        marginLeft="250px"
-        paddingLeft="5%"
-        align="flex-start"
-      >
+      <M.MainBox paddingLeft="5%" align="flex-start">
         <M.NoticeBox>
           <M.TitleBox>
             <M.MenuTitle color="white">Notice</M.MenuTitle>
