@@ -23,10 +23,10 @@ const Navbar = () => {
 
   return (
     <N.Side>
-      <N.Div height="15%" marginTop="10px" marginBottom="80px">
+      <N.LogoWrapper>
         <N.LogoImg />
-      </N.Div>
-      <N.Div height="30%">
+      </N.LogoWrapper>
+      <N.Div height="20rem">
         <N.SideBox>
           <N.SideBox_Side>
             <Checklist width={20} height={17} />
@@ -56,7 +56,7 @@ const Navbar = () => {
         )}
       </N.Div>
 
-      <N.Div height="30%">
+      <N.Div height="20rem">
         <N.SideBox>
           <N.SideBox_Side>
             <Complain width={22} height={16} />
