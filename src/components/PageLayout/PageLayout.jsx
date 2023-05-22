@@ -21,6 +21,7 @@ const PageLayoutWrapper = styled.div`
 `;
 
 const MainWrapper = styled.div`
+  width: 100%;
   margin-left: 25rem;
 `;
 
