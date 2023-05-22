@@ -18,7 +18,7 @@ const options = [
 const Counter = () => {
   return (
     <>
-      <Header title="소통창구 조회" />
+      {/* <Header title="소통창구 조회" /> */}
       <C.CounterBox>
         <C.CounterTitle>소통창구 조회하기</C.CounterTitle>
         <C.CounterSubtitle>

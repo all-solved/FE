@@ -3,14 +3,25 @@ import styled from "styled-components";
 import Header from "../../containers/Header/Header";
 import Navbar from "../../containers/Navbar/Navbar";
 import { Outlet } from "../../../node_modules/react-router-dom/dist/index";
+
 const PageLayout = () => {
   return (
-    <div>
-      <Header></Header>
-      <Outlet></Outlet>
+    <PageLayoutWrapper>
       <Navbar></Navbar>
-    </div>
+      <MainWrapper>
+        <Header></Header>
+        <Outlet></Outlet>
+      </MainWrapper>
+    </PageLayoutWrapper>
   );
 };
+
+const PageLayoutWrapper = styled.div`
+  display: flex;
+`;
+
+const MainWrapper = styled.div`
+  margin-left: 25rem;
+`;
 
 export default PageLayout;

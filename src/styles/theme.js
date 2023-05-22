@@ -1,14 +1,11 @@
 const fontSize = {
-  xxs: "0.625rem", // 10
-  xxxs: "0.625rem", // 10
-  xxs: "0.7rem",
-  xs: "0.75rem", // 12
+  xs: "0.6rem", // 12
   ssm: "0.8rem",
-  sm: "0.875rem", // 14
-  md: "1rem", // 16
-  lg: "1.25rem",
-  xl: "1.5rem",
-  xxl: "1.75",
+  sm: "1rem", // 14
+  md: "1.2rem", // 10
+  lg: "1.4rem", //12
+  xl: "1.6rem", //14
+  xxl: "1.8rem", //16
 };
 
 const fontBold = {

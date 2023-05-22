@@ -7,7 +7,7 @@ export const HeaderBox = styled.div`
   height: 60px;
   padding: 10px 30px;
   padding-right: 60px;
-  margin-left: 250px;
+
   border-bottom: 1px solid #e4e4e4;
 `;
 
