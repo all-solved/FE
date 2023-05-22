@@ -1,6 +1,12 @@
 import styled from "styled-components";
+import { ReactComponent as Plus } from "assets/images/svg/Plus.svg";
 
 // 큰 Div
+export const MainWrapper = styled.div`
+  margin-top: 5rem;
+  margin-left: 1rem;
+`;
+
 export const MainBox = styled.div`
   display: flex;
   flex-direction: ${(props) => props.flex};
@@ -9,12 +15,6 @@ export const MainBox = styled.div`
   padding-left: ${(props) => props.paddingLeft || "0px"};
   margin-bottom: ${(props) => props.marginBottom || "0px"};
   height: ${(props) => props.height};
-`;
-
-export const Title = styled.span`
-  font-size: ${(props) => props.theme.fontSize.lg};
-  font-weight: ${(props) => props.theme.fontBold.bold};
-  margin-top: 60px;
 `;
 
 // UserBox 부분
@@ -35,40 +35,40 @@ export const DivBox = styled.div`
   display: flex;
   align-items: ${(props) => props.align};
   justify-content: ${(props) => props.justify};
+
   flex-direction: ${(props) => props.flex || "row"};
   margin-left: ${(props) => props.marginLeft};
   margin-top: ${(props) => props.marginTop};
 `;
 
 export const UserFont1 = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xxs};
+  font-size: ${(props) => props.theme.fontSize.sm};
   font-weight: ${(props) => props.theme.fontBold.medium};
   color: ${(props) => props.color || "white"};
-  margin-right: ${(props) => props.marginRight};
 `;
 
 export const UserFont2 = styled.span`
   font-size: ${(props) => props.theme.fontSize.lg};
-  font-weight: ${(props) => props.theme.fontBold.medium};
+  font-weight: ${(props) => props.theme.fontBold.bold};
   color: white;
 `;
 
 export const UserFont3 = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xxs};
+  font-size: ${(props) => props.theme.fontSize.sm};
   font-weight: ${(props) => props.theme.fontBold.regular};
   color: white;
   margin-top: 1px;
 `;
 
 export const UserFont4 = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xxs};
+  font-size: ${(props) => props.theme.fontSize.sm};
   font-weight: ${(props) => props.theme.fontBold.regular};
   color: white;
   margin-right: ${(props) => props.marginRight};
 `;
 
 export const UserFont5 = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xxxs};
+  font-size: ${(props) => props.theme.fontSize.sm};
   font-weight: ${(props) => props.theme.fontBold.bold};
   color: ${(props) => props.color || "white"};
 `;
@@ -85,8 +85,8 @@ export const FontDiv = styled.div`
 
 // menu title
 export const MenuTitle = styled.span`
-  font-size: ${(props) => props.theme.fontSize.ssm};
-  font-weight: ${(props) => props.theme.fontBold.medium};
+  font-size: ${(props) => props.theme.fontSize.lg};
+  font-weight: ${(props) => props.theme.fontBold.bold};
   color: ${(props) => props.color};
 `;
 
@@ -122,7 +122,7 @@ export const Commu_SubBox = styled.div`
 `;
 
 export const CommuFont1 = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xxs};
+  font-size: ${(props) => props.theme.fontSize.sm};
   font-weight: ${(props) => props.theme.fontBold.bold};
   margin-top: 18px;
 `;
@@ -151,26 +151,26 @@ export const NoticeContentBox = styled.div`
 export const NoticeSpanBox = styled.div`
   display: flex;
   justify-content: space-between;
-  align-center: center;
+  align-items: center;
   height: 15px;
   margin-bottom: 10px;
 `;
 
 export const NoticeFont1 = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xxxs};
+  font-size: ${(props) => props.theme.fontSize.sm};
   font-weight: ${(props) => props.theme.fontBold.light};
   color: white;
   text-align: center;
 `;
 
 export const NoticeFont2 = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xs};
+  font-size: ${(props) => props.theme.fontSize.sm};
   font-weight: ${(props) => props.theme.fontBold.regular};
   line-height: 15px;
 `;
 
 export const NoticeFont3 = styled.span`
-  font-size: ${(props) => props.theme.fontSize.xxxs};
+  font-size: ${(props) => props.theme.fontSize.sm};
   font-weight: ${(props) => props.theme.fontBold.regular};
   color: #7b7b7b;
   line-height: 15px;
@@ -181,4 +181,8 @@ export const ComplainBox = styled.div`
   display: flex;
   width: 750px;
   flex-direction: column;
+`;
+
+export const PlusImage = styled(Plus)`
+  margin-left: 1rem;
 `;
