@@ -15,7 +15,20 @@ export const Side = styled.div`
   bottom: 0;
   left: 0;
 `;
-
+export const NavWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 250px;
+  height: 100vh;
+  padding: 0 15px;
+  border-right: 1px solid #e4e4e4;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+`;
 export const Div = styled.div`
   display: flex;
   margin-top: ${(props) => props.marginTop || "0px"};
@@ -30,11 +43,21 @@ export const Div = styled.div`
   position: relative;
 `;
 
+export const NavContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 15rem;
+`;
+
 export const LogoWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 16rem;
+  height: 12rem;
   margin-top: 2rem;
 `;
 
@@ -48,7 +71,6 @@ export const SideBox = styled.div`
   border-radius: 10px;
   width: 100%;
   position: absolute;
-  top: -10px;
 `;
 
 export const SideBox_Side = styled.div`
@@ -70,6 +92,11 @@ export const SideBox_Span = styled.span`
 
 export const SideBoxInnerSpan = styled(SideBox_Span)`
   font-size: ${(props) => props.theme.fontSize.md};
+`;
+
+export const UnderSideBox = styled.div`
+  margin-top: 6rem;
+  width: 100%;
 `;
 
 export const SideBox_List = styled.div`

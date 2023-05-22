@@ -9,7 +9,7 @@ export const CounterBox = styled.div`
   width: auto;
   height: 100vh;
   padding: 50px 60px;
-  margin-left: 250px;
+
   background-color: #eeeff7;
 `;
 

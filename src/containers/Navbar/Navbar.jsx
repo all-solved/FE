@@ -22,11 +22,11 @@ const Navbar = () => {
   };
 
   return (
-    <N.Side>
+    <N.NavWrapper>
       <N.LogoWrapper>
         <N.LogoImg />
       </N.LogoWrapper>
-      <N.Div height="20rem">
+      <N.NavContainer>
         <N.SideBox>
           <N.SideBox_Side>
             <Checklist width={20} height={17} />
@@ -37,7 +37,12 @@ const Navbar = () => {
           </N.SideBox_Side>
         </N.SideBox>
         {checkListMenu ? (
-          <>
+          <N.UnderSideBox>
+            <N.SideBox_List onClick={() => navigate("/allso/create_counter")}>
+              <N.SideBoxInnerSpan color="#000000">
+                소통창구 생성
+              </N.SideBoxInnerSpan>
+            </N.SideBox_List>
             <N.SideBox_List onClick={() => navigate("/allso/counter")}>
               <N.SideBoxInnerSpan color="#000000">
                 소통창구 조회
@@ -50,13 +55,13 @@ const Navbar = () => {
                 소통창구 상세
               </N.SideBoxInnerSpan>
             </N.SideBox_List>
-          </>
+          </N.UnderSideBox>
         ) : (
           <></>
         )}
-      </N.Div>
+      </N.NavContainer>
 
-      <N.Div height="20rem">
+      <N.NavContainer>
         <N.SideBox>
           <N.SideBox_Side>
             <Complain width={22} height={16} />
@@ -67,7 +72,7 @@ const Navbar = () => {
           </N.SideBox_Side>
         </N.SideBox>
         {complainMenu ? (
-          <>
+          <N.UnderSideBox>
             <N.SideBox_List onClick={() => navigate("/allso/problem")}>
               <N.SideBoxInnerSpan color="#000000">
                 컴플레인 조회
@@ -80,13 +85,12 @@ const Navbar = () => {
                 컴플레인 상세
               </N.SideBoxInnerSpan>
             </N.SideBox_List>
-          </>
+          </N.UnderSideBox>
         ) : (
           <></>
         )}
-      </N.Div>
-      <N.Div height="50%"></N.Div>
-    </N.Side>
+      </N.NavContainer>
+    </N.NavWrapper>
   );
 };
 
