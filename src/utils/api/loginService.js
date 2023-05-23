@@ -3,7 +3,7 @@ import axios from "axios";
 const login = async (access_token) => {
   try {
     const response = await axios.post(
-      "http://semtle.catholic.ac.kr:8081/#/allso/login",
+      "http://semtle.catholic.ac.kr:8081/allso/login",
       { access_token },
 
       {
