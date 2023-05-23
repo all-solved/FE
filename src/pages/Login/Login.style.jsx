@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as MainImgLogin } from "assets/images/svg/mainimg.svg";
 import KaKaoImg from "assets/kakao_login_medium_wide.png";
+import theme from "styles/theme";
 
 export const LoginWrapper = styled.div`
   display: flex;
@@ -17,18 +18,18 @@ export const LogoWrapper = styled.div`
   align-items: center;
 `;
 export const MainImg = styled(MainImgLogin)`
-  width: 200px;
-  height: 150px;
+  width: 20rem;
+  height: 15rem;
   margin: 15px;
 `;
 
-export const MainText = styled.h2`
-  font-size: 1.25rem;
+export const MainText = styled.h1`
+  font-size: ${theme.fontSize.lg};
   margin-top: 10px;
 `;
 
 export const SubText = styled.h3`
-  font-size: 1rem;
+  font-size: ${theme.fontSize.md};
 `;
 
 export const KakaoLoginBtn = styled.button`
