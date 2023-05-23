@@ -8,7 +8,7 @@ import Counter from "../pages/Counter/CounterSelect/Counter";
 import Main from "../pages/Main/Main";
 import Problem from "pages/Problem/Problem";
 import ProblemDetail from "pages/ProblemDetail/ProblemDetail";
-
+import CounterCreate from "pages/Counter/CounterCreate/CounterCreate";
 const Router = () => {
   return (
     <BrowserRouter>
@@ -29,6 +29,10 @@ const Router = () => {
             </Route>
 
             <Route path="/allso/counter" element={<Counter />}></Route>
+            <Route
+              path="/allso/counter_create"
+              element={<CounterCreate></CounterCreate>}
+            ></Route>
             <Route
               path="/allso/counter/detail/:id"
               element={<div>소통창구 상세 준비중입니다.</div>}
