@@ -1,6 +1,6 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
 
-import PageLayout from "../components/PageLayout/PageLayout";
+import PageLayout from "../pages/PageLayout/PageLayout";
 import AuthLogin from "../pages/Login/AuthLogin";
 import Login from "../pages/Login/Login";
 import PrivateRoute from "./PrivateRoute";
@@ -11,7 +11,7 @@ import ProblemDetail from "pages/ProblemDetail/ProblemDetail";
 import CounterCreate from "pages/Counter/CounterCreate/CounterCreate";
 const Router = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/allso/login" element={<Login />}></Route>
         <Route
@@ -42,7 +42,7 @@ const Router = () => {
         </Route>
         <Route path="*" element={<div>Error page</div>}></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
