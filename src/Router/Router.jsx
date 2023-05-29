@@ -11,7 +11,7 @@ import ProblemDetail from "pages/ProblemDetail/ProblemDetail";
 import CounterCreate from "pages/Counter/CounterCreate/CounterCreate";
 const Router = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/allso/login" element={<Login />}></Route>
         <Route
@@ -42,7 +42,7 @@ const Router = () => {
         </Route>
         <Route path="*" element={<div>Error page</div>}></Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
