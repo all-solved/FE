@@ -7,16 +7,17 @@ export const CounterBox = styled.div`
   display: flex;
   flex-direction: column;
   width: auto;
-  height: 100vh;
-  padding: 50px 60px;
 
+  padding: 50px 60px;
+  margin: 3.5rem 5rem 0 5rem;
+
+  border-radius: 12px;
   background-color: #eeeff7;
 `;
 
 export const CounterDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   padding: 0 50px;
 `;
 
