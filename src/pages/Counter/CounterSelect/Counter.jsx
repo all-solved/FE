@@ -19,6 +19,7 @@ const Counter = () => {
   return (
     <>
       {/* <Header title="소통창구 조회" /> */}
+
       <C.CounterBox>
         {/* <C.CounterTitle>소통창구 조회하기</C.CounterTitle>
         <C.CounterSubtitle>
@@ -26,8 +27,9 @@ const Counter = () => {
         </C.CounterSubtitle> */}
         <Title mainText="소통창구 조회"></Title>
         <C.CounterDiv>
-          <C.SelectDiv justify="space-between" marginTop="30px">
+          <C.SelectDiv justify="space-between">
             <C.SearchBox enterButton placeholder="Search"></C.SearchBox>
+
             <C.SelectDiv>
               <Filter />
               <C.SelectText marginLeft="5px">Filter</C.SelectText>

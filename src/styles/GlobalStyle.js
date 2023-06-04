@@ -20,9 +20,15 @@ time, mark, audio, video, input, textarea, select {
   font-size: 62.5%;
   // font: inherit;
   vertical-align: baseline;
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif; */
+  @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+ font-family: 'Nanum Gothic', sans-serif;
+}
+
 }
 
 article, aside, details, figcaption, figure,
@@ -54,12 +60,13 @@ div {
 html, body {
   height: 100%;
   // font-size:62.5%;
-
+   font-family: 'Nanum Gothic', sans-serif;
+  /* font-family: 'Gomsin'; */
 }
 
 body{
     margin: 0 auto;
-    font-family: 'Noto Sans KR', sans-serif;
+
 }
     a {
     text-decoration: none;

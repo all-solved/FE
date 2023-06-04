@@ -20,7 +20,7 @@ export const NavWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  width: 250px;
+  width: 25rem;
   height: 100vh;
   padding: 0 15px;
   border-right: 1px solid #e4e4e4;
@@ -28,6 +28,9 @@ export const NavWrapper = styled.div`
   top: 0;
   bottom: 0;
   left: 0;
+
+  z-index: 1;
+  background-color: white;
 `;
 export const Div = styled.div`
   display: flex;

@@ -7,6 +7,8 @@ export const TitleWrapper = styled.div`
 
   width: 100%;
   height: 3.4rem;
+
+  margin-bottom: 3rem;
 `;
 
 export const HeadText = styled.h1`

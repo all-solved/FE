@@ -1,11 +1,17 @@
 import React from "react";
-import Header from "../../../containers/Header/Header";
-const Counter_detail = () => {
+import CounterComponent from "components/CounterComponent/CounterComponent";
+import { CounteDetailWrapper } from "./CounterDetail.style";
+
+const CounterDetail = () => {
   return (
     <>
-      <Header title="소통창구 상세" />
+      <CounterComponent
+        mainText="소통창구 조회"
+        create={false}
+        rule={10}
+      ></CounterComponent>
     </>
   );
 };
 
-export default Counter_detail;
+export default CounterDetail;

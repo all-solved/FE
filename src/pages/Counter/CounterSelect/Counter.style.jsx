@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { Input, Select, Space, Table, Tag, Button } from "antd";
-
+import { SearchOutlined } from "@ant-design/icons";
 const { Search } = Input;
 
 export const CounterBox = styled.div`
   display: flex;
   flex-direction: column;
   width: auto;
-
-  padding: 50px 60px;
-  margin: 3.5rem 5rem 0 5rem;
+  height: 83%;
+  padding: 5rem 6rem;
+  margin: 3.5rem 3rem 0 3rem;
 
   border-radius: 12px;
   background-color: #eeeff7;
@@ -19,6 +19,8 @@ export const CounterDiv = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 50px;
+  width: 110rem;
+  height: 57rem;
 `;
 
 export const CounterTitle = styled.span`
