@@ -82,7 +82,17 @@ body{
     // font-family: 'Roboto';
   }
 
+  /* input[type="text"]:disabled{
+    background-color: white;
+  }
+   */
 
+  input[type="text"]:disabled {
+    background: white;
+}
+textarea:disabled{
+  background: white;
+}
 `;
 
 export default GlobalStyle;

@@ -12,8 +12,9 @@ import {
   TitleText,
   TitleInput,
   SubText,
-  DateWrapper,
-  DateContainer,
+  PeriodWrapper,
+  PeriodLabel,
+  PeriodRadio,
   ContentContainer,
   ContentTextArea,
   ContentWrapper,
@@ -42,16 +43,16 @@ const CounterComponent = ({ mainText, create, width, data }) => {
 
           <TitleContainer width="40rem">
             <SubText>창구 게시 기간 : </SubText>
-            <DateWrapper>
-              <DateContainer>
-                <CustomCheckbox></CustomCheckbox>
-                <SubText>7일</SubText>
-              </DateContainer>
-              <DateContainer>
-                <CustomCheckbox></CustomCheckbox>
-                <SubText>15일</SubText>
-              </DateContainer>
-            </DateWrapper>
+            <PeriodWrapper>
+              <PeriodLabel>
+                <PeriodRadio type="radio" value="" checked=""></PeriodRadio>
+                7일
+              </PeriodLabel>
+              <PeriodLabel>
+                <PeriodRadio type="radio" value="" checked=""></PeriodRadio>
+                15일
+              </PeriodLabel>
+            </PeriodWrapper>
           </TitleContainer>
         </DivWrapper>
         <DivWrapper>

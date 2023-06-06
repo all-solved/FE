@@ -41,6 +41,7 @@ export const TitleInput = styled.input`
   height: 3rem;
 
   margin-left: 1rem;
+  margin-right: 3rem;
   border: none;
 
   font-size: ${({ theme }) => theme.fontSize.md};
@@ -48,19 +49,24 @@ export const TitleInput = styled.input`
   outline: none; /* 포커스 스타일 제거 */
 `;
 
-export const DateWrapper = styled.div`
+export const PeriodWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  align-items: center;
   width: 12rem;
   margin-left: 1rem;
 `;
-export const DateContainer = styled.div`
+
+export const PeriodLabel = styled.label`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 5rem;
+
+  font-size: ${({ theme }) => theme.fontSize.md};
+`;
+
+export const PeriodRadio = styled.input`
+  margin-right: 5px;
 `;
 export const ContentContainer = styled(TitleContainer)`
   display: flex;

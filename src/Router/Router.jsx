@@ -10,6 +10,7 @@ import Problem from "pages/Problem/Problem";
 import ProblemDetail from "pages/ProblemDetail/ProblemDetail";
 import CounterCreate from "pages/Counter/CounterCreate/CounterCreate";
 import CounterDetail from "pages/Counter/CounterDetail/CounterDetail";
+import CounterEdit from "pages/Counter/CounterEdit/CounterEdit";
 const Router = () => {
   return (
     <BrowserRouter>
@@ -37,6 +38,10 @@ const Router = () => {
             <Route
               path="/allso/counter/detail/:id"
               element={<CounterDetail></CounterDetail>}
+            ></Route>
+            <Route
+              path="/allso/counter/edit/:id"
+              element={<CounterEdit />}
             ></Route>
           </Route>
           {/* </Route> */}

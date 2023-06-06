@@ -25,7 +25,7 @@ const Counter = () => {
         <C.CounterSubtitle>
           내가 생성한 소통창구를 확인하세요.
         </C.CounterSubtitle> */}
-        <Title mainText="소통창구 조회"></Title>
+        <Title mainText="소통창구 목록"></Title>
         <C.CounterDiv>
           <C.SelectDiv justify="space-between">
             <C.SearchBox enterButton placeholder="Search"></C.SearchBox>

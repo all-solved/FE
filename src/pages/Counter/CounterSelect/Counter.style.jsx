@@ -6,7 +6,8 @@ const { Search } = Input;
 export const CounterBox = styled.div`
   display: flex;
   flex-direction: column;
-  width: auto;
+  align-items: center;
+  width: 110rem;
   height: 83%;
   padding: 5rem 6rem;
   margin: 3.5rem 3rem 0 3rem;
@@ -20,8 +21,8 @@ export const CounterDiv = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 50px;
-  width: ${(props) => (props.width ? props.width : "auto")};
-  height: 57rem;
+  width: ${(props) => (props.width ? props.width : "100rem")};
+  height: 47rem;
 `;
 
 export const CounterTitle = styled.span`
@@ -54,7 +55,7 @@ export const SelectDiv = styled.div`
   justify-content: ${(props) => props.justify};
   margin-top: ${(props) => props.marginTop};
   margin-bottom: ${(props) => props.marginBottom};
-  width: 70rem;
+  width: 86rem;
 `;
 
 export const SelectText = styled.span`
@@ -83,7 +84,7 @@ export const SelectFilter = styled(Select)`
 `;
 
 export const CounterTable = styled(Table)`
-  width: 70rem;
+  width: 86rem;
 `;
 
 export const CounterBtn = styled(Button)``;
