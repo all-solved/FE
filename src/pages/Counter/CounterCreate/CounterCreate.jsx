@@ -6,6 +6,7 @@ const CounterCreate = () => {
       <CounterComponent
         mainText="소통창구 생성"
         create={true}
+        width="110rem"
       ></CounterComponent>
     </>
   );

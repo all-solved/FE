@@ -4,7 +4,8 @@ import theme from "styles/theme";
 export const DivWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 100rem;
+  /* width: 100rem; */
+  width: 90%;
 
   margin-bottom: 3rem;
 `;
@@ -13,15 +14,18 @@ export const TitleContainer = styled.div`
   display: flex;
   /* justify-content: ; */
   align-items: center;
-
-  width: ${(props) => props.width};
+  /*
+  width: ${(props) => props.width}; */
+  width: 50%;
   height: 4.5rem;
   padding-left: 1rem;
   border-radius: 12px;
   border: 1px solid ${({ theme }) => theme.colors.strokeGrey};
   background-color: ${({ theme }) => theme.colors.white};
 `;
-
+export const MiddleContainer = styled(TitleContainer)`
+  width: 100%;
+`;
 export const TitleText = styled.span`
   font-size: ${({ theme }) => theme.fontSize.lg};
   font-weight: ${({ theme }) => theme.fontBold.bold};
@@ -33,7 +37,7 @@ export const SubText = styled.span`
 `;
 
 export const TitleInput = styled.input`
-  width: 32rem;
+  width: ${(props) => (props.width === "110rem" ? "32rem" : "24rem")};
   height: 3rem;
 
   margin-left: 1rem;
@@ -65,14 +69,17 @@ export const ContentContainer = styled(TitleContainer)`
   justify-content: space-around;
   padding: 1rem;
   height: 26rem;
+  width: 100%;
 `;
 export const ContentWrapper = styled.div`
   display: flex;
   justify-content: start;
+  width: 100%;
 `;
 export const TermWrapper = styled.div``;
 export const ContentTextArea = styled.textarea`
-  width: 90rem;
+  /* width: 90rem; */
+  width: 90%;
   height: 15rem;
   font-size: ${({ theme }) => theme.fontSize.lg};
 

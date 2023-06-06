@@ -4,8 +4,10 @@ import {
   CounterBox,
   CounterDiv,
 } from "pages/Counter/CounterSelect/Counter.style";
+import propTypes from "prop-types";
 import {
   TitleContainer,
+  MiddleContainer,
   DivWrapper,
   TitleText,
   TitleInput,
@@ -24,15 +26,16 @@ import {
 } from "./CounterComponent.style";
 import Title from "components/Title/Title";
 import { COMPLAINT_TERMS } from "constants/CounterCreateTerms";
-import { Div } from "containers/Navbar/Navbar.style";
 
-const CounterComponent = ({ mainText, create, rule }) => {
+const CounterComponent = ({ mainText, create, width, data }) => {
+  const { title, counterDate, contactNumber, contactEmail, contents } =
+    data || {};
   return (
     <CounterBox>
       <Title mainText={mainText}></Title>
-      <CounterDiv>
+      <CounterDiv width={width}>
         <DivWrapper>
-          <TitleContainer width="40rem">
+          <TitleContainer>
             <TitleText>TITLE : </TitleText>
             <TitleInput placeholder="소통창구 이름을 입력하세요."></TitleInput>
           </TitleContainer>
@@ -52,15 +55,15 @@ const CounterComponent = ({ mainText, create, rule }) => {
           </TitleContainer>
         </DivWrapper>
         <DivWrapper>
-          <TitleContainer width="100rem">
+          <MiddleContainer>
             <SubText>관련 부서 연락처 : </SubText>
             <TitleInput></TitleInput>
             <SubText>이메일 : </SubText>
             <TitleInput></TitleInput>
-          </TitleContainer>
+          </MiddleContainer>
         </DivWrapper>
         <DivWrapper>
-          <ContentContainer width="100rem">
+          <ContentContainer>
             <ContentWrapper>
               <SubText>내용 : </SubText>
               <ContentTextArea></ContentTextArea>
@@ -89,4 +92,7 @@ const CounterComponent = ({ mainText, create, rule }) => {
   );
 };
 
+CounterComponent.propTypes = {
+  mainText: propTypes.string.isRequired,
+};
 export default CounterComponent;
