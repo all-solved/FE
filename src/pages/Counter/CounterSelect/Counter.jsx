@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as C from "./Counter.style.jsx";
-import Header from "../../../containers/Header/Header";
+import Title from "components/Title/Title";
 import { ReactComponent as Filter } from "assets/images/svg/Filter.svg";
 import { columns, data } from "../../DummyData/TableData.jsx";
 
@@ -19,18 +19,20 @@ const Counter = () => {
   return (
     <>
       {/* <Header title="소통창구 조회" /> */}
+
       <C.CounterBox>
-        <C.CounterTitle>소통창구 조회하기</C.CounterTitle>
+        {/* <C.CounterTitle>소통창구 조회하기</C.CounterTitle>
         <C.CounterSubtitle>
           내가 생성한 소통창구를 확인하세요.
-        </C.CounterSubtitle>
-
+        </C.CounterSubtitle> */}
+        <Title mainText="소통창구 목록"></Title>
         <C.CounterDiv>
-          <C.SelectDiv justify="space-between" marginTop="30px">
+          <C.SelectDiv justify="space-between">
             <C.SearchBox enterButton placeholder="Search"></C.SearchBox>
+
             <C.SelectDiv>
-              <Filter />
-              <C.SelectText marginLeft="5px">Filter</C.SelectText>
+              {/* <Filter /> */}
+              {/* <C.SelectText marginLeft="5px">Filter</C.SelectText>
               <C.SpaceFilter direction="vertical">
                 <C.SelectFilter
                   mode="multiple"
@@ -39,12 +41,12 @@ const Counter = () => {
                   onChange={handleChange}
                   options={options}
                 ></C.SelectFilter>
-              </C.SpaceFilter>
+              </C.SpaceFilter> */}
             </C.SelectDiv>
           </C.SelectDiv>
 
           <C.SelectDiv
-            marginTop="60px"
+            marginTop="30px"
             marginBottom="20px"
             justify="space-between"
           >

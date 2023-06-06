@@ -18,6 +18,7 @@ const PageLayout = () => {
 
 const PageLayoutWrapper = styled.div`
   display: flex;
+  height: 100vh;
 `;
 
 const MainWrapper = styled.div`

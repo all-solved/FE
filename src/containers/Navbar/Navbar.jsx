@@ -45,7 +45,7 @@ const Navbar = () => {
             </N.SideBox_List>
             <N.SideBox_List onClick={() => navigate("/allso/counter")}>
               <N.SideBoxInnerSpan color="#000000">
-                소통창구 조회
+                소통창구 목록
               </N.SideBoxInnerSpan>
             </N.SideBox_List>
             <N.SideBox_List
@@ -75,7 +75,7 @@ const Navbar = () => {
           <N.UnderSideBox>
             <N.SideBox_List onClick={() => navigate("/allso/problem")}>
               <N.SideBoxInnerSpan color="#000000">
-                컴플레인 조회
+                컴플레인 목록
               </N.SideBoxInnerSpan>
             </N.SideBox_List>
             <N.SideBox_List
