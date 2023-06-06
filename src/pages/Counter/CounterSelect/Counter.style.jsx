@@ -85,6 +85,7 @@ export const SelectFilter = styled(Select)`
 
 export const CounterTable = styled(Table)`
   width: 86rem;
+  cursor: pointer;
 `;
 
 export const CounterBtn = styled(Button)``;
