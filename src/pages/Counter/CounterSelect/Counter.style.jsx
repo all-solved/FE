@@ -18,8 +18,9 @@ export const CounterBox = styled.div`
 export const CounterDiv = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0 50px;
-  width: 110rem;
+  width: ${(props) => (props.width ? props.width : "auto")};
   height: 57rem;
 `;
 
@@ -53,7 +54,7 @@ export const SelectDiv = styled.div`
   justify-content: ${(props) => props.justify};
   margin-top: ${(props) => props.marginTop};
   margin-bottom: ${(props) => props.marginBottom};
-  width: auto;
+  width: 70rem;
 `;
 
 export const SelectText = styled.span`
@@ -81,6 +82,8 @@ export const SelectFilter = styled(Select)`
   width: 300px;
 `;
 
-export const CounterTable = styled(Table)``;
+export const CounterTable = styled(Table)`
+  width: 70rem;
+`;
 
 export const CounterBtn = styled(Button)``;

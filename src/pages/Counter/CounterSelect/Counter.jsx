@@ -31,8 +31,8 @@ const Counter = () => {
             <C.SearchBox enterButton placeholder="Search"></C.SearchBox>
 
             <C.SelectDiv>
-              <Filter />
-              <C.SelectText marginLeft="5px">Filter</C.SelectText>
+              {/* <Filter /> */}
+              {/* <C.SelectText marginLeft="5px">Filter</C.SelectText>
               <C.SpaceFilter direction="vertical">
                 <C.SelectFilter
                   mode="multiple"
@@ -41,12 +41,12 @@ const Counter = () => {
                   onChange={handleChange}
                   options={options}
                 ></C.SelectFilter>
-              </C.SpaceFilter>
+              </C.SpaceFilter> */}
             </C.SelectDiv>
           </C.SelectDiv>
 
           <C.SelectDiv
-            marginTop="60px"
+            marginTop="30px"
             marginBottom="20px"
             justify="space-between"
           >
