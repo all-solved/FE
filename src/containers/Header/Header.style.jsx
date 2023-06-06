@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as Home } from "assets/images/svg/home.svg";
 import { ReactComponent as Setting } from "assets/images/svg/setting.svg";
-
+import { ReactComponent as UserIcon } from "../images/User.svg";
 export const HeaderBox = styled.div`
   display: flex;
   align-items: center;
@@ -43,5 +43,8 @@ export const HomeIcon = styled(Home)`
   cursor: pointer;
 `;
 export const SettingIcon = styled(Setting)`
+  cursor: pointer;
+`;
+export const UserIcon1 = styled(UserIcon)`
   cursor: pointer;
 `;
