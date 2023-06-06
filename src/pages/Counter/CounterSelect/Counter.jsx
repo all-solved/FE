@@ -38,7 +38,12 @@ const Counter = () => {
                 ]}
               ></C.SelectBox>
             </C.SelectDiv>
-            <C.CounterBtn type="primary">소통창구 생성</C.CounterBtn>
+            <C.CounterBtn
+              type="primary"
+              onClick={() => navigate("/allso/counter_create")}
+            >
+              소통창구 생성
+            </C.CounterBtn>
           </C.SelectDiv>
           <C.CounterTable
             columns={columns}
