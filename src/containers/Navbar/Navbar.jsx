@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <N.NavWrapper>
       <N.LogoWrapper>
-        <N.LogoImg />
+        <N.LogoImg onClick={() => navigate("/")} />
       </N.LogoWrapper>
       <N.NavContainer>
         <N.SideBox>

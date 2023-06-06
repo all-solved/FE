@@ -4,6 +4,7 @@ import { CounterData, NoticeData } from "../DummyData/DummyData";
 import { ReactComponent as UserIcon } from "assets/images/svg/User.svg";
 import { ReactComponent as DummyImg } from "assets/images/svg/Dummy.svg";
 import { Calendar, theme } from "antd";
+import ChartComponent from "components/Chart/Chart";
 
 const Main = () => {
   const { token } = theme.useToken();
@@ -15,7 +16,7 @@ const Main = () => {
 
   return (
     <M.MainWrapper>
-      <M.MainBox paddingLeft="5%" align="flex-end" marginBottom="70px">
+      <M.MainBox paddingLeft="5%" align="flex-end" marginBottom="40px">
         <M.UserBox>
           <M.DivBox justify="space-between" align="center">
             <UserIcon />
@@ -29,7 +30,7 @@ const Main = () => {
             </M.UserFont2>
             <M.UserFont3> 오늘의 민원을 해결해주세요 :)</M.UserFont3>
           </M.DivBox>
-          <M.DivBox flex="column" marginTop="35px">
+          <M.DivBox flex="column" marginTop="15px">
             <M.DivBox align="center" justify="end">
               <M.UserFont4 marginRight="1rem">해결되지 않은 민원</M.UserFont4>
               <M.FontDiv>
@@ -84,8 +85,9 @@ const Main = () => {
         </M.NoticeBox>
         <M.ComplainBox>
           <M.TitleBox>
-            <M.MenuTitle color="white">전체 접수된 민원</M.MenuTitle>
+            <M.MenuTitle color="white">최근 일주일 컴플레인</M.MenuTitle>
           </M.TitleBox>
+          <ChartComponent></ChartComponent>
         </M.ComplainBox>
       </M.MainBox>
     </M.MainWrapper>

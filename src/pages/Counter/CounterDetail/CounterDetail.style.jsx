@@ -157,10 +157,12 @@ export const QRcodeWrapper = styled.div`
   flex-direction: column;
 
   align-items: center;
-
-  gap: 1rem;
-  width: 15rem;
-  height: 47rem;
+  gap: 3rem;
+  width: 19rem;
+  height: 27rem;
+  padding: 4rem;
+  background: white;
+  border-radius: 7px;
 `;
 
 export const QRcodeMessage = styled.span`

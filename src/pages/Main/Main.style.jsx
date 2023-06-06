@@ -22,7 +22,7 @@ export const UserBox = styled.div`
   display: flex;
   flex-direction: column;
   width: 290px;
-  height: 230px;
+  height: 210px;
   background-color: ${(props) => props.theme.colors.mainBlue};
   border-radius: 12px;
   margin-right: 60px;
@@ -105,7 +105,7 @@ export const TitleBox = styled.div`
 export const CommuBox = styled.div`
   display: flex;
   width: 750px;
-  height: 240px;
+  height: 220px;
   flex-direction: column;
   justify-content: flex-end;
 `;

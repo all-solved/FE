@@ -1,5 +1,5 @@
 export const CounterDetailData = {
-  title: "가톨릭대학교 시설보수팀",
+  title: "가톨릭대학교 시설보수",
   counterPeriod: 7,
   contactNumber: "010-2311-1090",
   contactEmail: "m98m@naver.com",
