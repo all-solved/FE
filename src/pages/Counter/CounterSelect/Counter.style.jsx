@@ -1,23 +1,28 @@
 import styled from "styled-components";
 import { Input, Select, Space, Table, Tag, Button } from "antd";
-
+import { SearchOutlined } from "@ant-design/icons";
 const { Search } = Input;
 
 export const CounterBox = styled.div`
   display: flex;
   flex-direction: column;
-  width: auto;
-  height: 100vh;
-  padding: 50px 60px;
+  align-items: center;
+  width: 110rem;
+  height: 83%;
+  padding: 5rem 6rem;
+  margin: 3.5rem 3rem 0 3rem;
 
+  border-radius: 12px;
   background-color: #eeeff7;
 `;
 
 export const CounterDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  align-items: center;
   padding: 0 50px;
+  width: ${(props) => (props.width ? props.width : "100rem")};
+  height: 47rem;
 `;
 
 export const CounterTitle = styled.span`
@@ -50,7 +55,7 @@ export const SelectDiv = styled.div`
   justify-content: ${(props) => props.justify};
   margin-top: ${(props) => props.marginTop};
   margin-bottom: ${(props) => props.marginBottom};
-  width: auto;
+  width: 86rem;
 `;
 
 export const SelectText = styled.span`
@@ -78,6 +83,8 @@ export const SelectFilter = styled(Select)`
   width: 300px;
 `;
 
-export const CounterTable = styled(Table)``;
+export const CounterTable = styled(Table)`
+  width: 86rem;
+`;
 
 export const CounterBtn = styled(Button)``;

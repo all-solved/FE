@@ -19,7 +19,10 @@ const fontBold = {
 
 const colors = {
   mainBlue: "#3A3E84",
-  mainLightGrey: "CACACA",
+  mainLightGrey: "#CACACA",
+  white: "#FFFFFF",
+  strokeGrey: "#A3A3A3",
+  red: "#ff0000",
 };
 
 export const theme = {

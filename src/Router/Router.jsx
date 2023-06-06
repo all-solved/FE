@@ -9,6 +9,8 @@ import Main from "../pages/Main/Main";
 import Problem from "pages/Problem/Problem";
 import ProblemDetail from "pages/ProblemDetail/ProblemDetail";
 import CounterCreate from "pages/Counter/CounterCreate/CounterCreate";
+import CounterDetail from "pages/Counter/CounterDetail/CounterDetail";
+import CounterEdit from "pages/Counter/CounterEdit/CounterEdit";
 const Router = () => {
   return (
     <HashRouter>
@@ -35,7 +37,11 @@ const Router = () => {
             ></Route>
             <Route
               path="/allso/counter/detail/:id"
-              element={<div>소통창구 상세 준비중입니다.</div>}
+              element={<CounterDetail></CounterDetail>}
+            ></Route>
+            <Route
+              path="/allso/counter/edit/:id"
+              element={<CounterEdit />}
             ></Route>
           </Route>
           {/* </Route> */}

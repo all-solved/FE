@@ -6,9 +6,8 @@ export const HeaderBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
-
-  padding: 0 5%;
+  height: 6rem;
+  padding: 0 1.2rem;
 
   border-bottom: 1px solid #e4e4e4;
 `;
