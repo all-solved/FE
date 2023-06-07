@@ -61,12 +61,15 @@ export const PeriodWrapper = styled.div`
 export const PeriodLabel = styled.label`
   display: flex;
   align-items: center;
-
   font-size: ${({ theme }) => theme.fontSize.md};
 `;
 
+export const PeriodText = styled.span`
+  font-size: ${({ theme }) => theme.fontSize.md};
+  margin-right: 0.8rem;
+`;
 export const PeriodRadio = styled.input`
-  margin-right: 5px;
+  margin-right: 0.5rem;
 `;
 export const ContentContainer = styled(TitleContainer)`
   display: flex;
