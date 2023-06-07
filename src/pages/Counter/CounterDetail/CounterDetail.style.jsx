@@ -38,7 +38,7 @@ export const TitleContainer = styled.div`
   align-items: center;
   /*
   width: ${(props) => props.width}; */
-  width: 50%;
+  width: 45%;
   height: 4.5rem;
   padding-left: 1rem;
   border-radius: 12px;
@@ -63,7 +63,7 @@ export const TitleInput = styled.input`
   height: 3rem;
 
   margin-left: 1rem;
-  margin-right: 3rem;
+  margin-right: 1.5rem;
   border: none;
 
   font-size: ${({ theme }) => theme.fontSize.md};

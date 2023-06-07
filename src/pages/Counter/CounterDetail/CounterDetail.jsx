@@ -53,7 +53,7 @@ const CounterDetail = () => {
     if (window.confirm("소통창구를 삭제하시겠습니까?")) {
       //함수 추가
       alert("소통창구가 삭제되었습니다");
-      navigate("/");
+      navigate("/allso/counter");
     }
   };
 
@@ -69,7 +69,7 @@ const CounterDetail = () => {
               <TitleInput
                 type="text"
                 placeholder="소통창구 이름을 입력하세요."
-                width="25rem"
+                width="22rem"
                 value={title}
                 disabled
               ></TitleInput>
