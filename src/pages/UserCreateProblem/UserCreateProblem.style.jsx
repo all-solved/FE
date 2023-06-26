@@ -33,7 +33,7 @@ export const ProblemUrgencyWrapper = styled.section`
 export const ProblemUrgencySelect = styled.select`
   width: 12rem;
   height: 4rem;
-
+  font-size: ${({ theme }) => theme.fontSize.sm};
   z-index: 2;
 `;
 
