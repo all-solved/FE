@@ -23,12 +23,13 @@ time, mark, audio, video, input, textarea, select {
   /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
   font-family: 'Noto Sans KR', sans-serif; */
-  @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+  /* @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css); */
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 .nanumgothic * {
  font-family: 'Nanum Gothic', sans-serif;
 }
-
+font-family: 'Noto Sans KR', sans-serif;
 }
 
 article, aside, details, figcaption, figure,
