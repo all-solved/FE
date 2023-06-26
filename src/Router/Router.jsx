@@ -11,13 +11,15 @@ import ProblemDetail from "pages/ProblemDetail/ProblemDetail";
 import CounterCreate from "pages/Counter/CounterCreate/CounterCreate";
 import CounterDetail from "pages/Counter/CounterDetail/CounterDetail";
 import CounterEdit from "pages/Counter/CounterEdit/CounterEdit";
+import UserCounterInfo from "pages/UserCounterInfo/UserCounterInfo";
+import UserCreateProblem from "pages/UserCreateProblem/UserCreateProblem";
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/allso/login" element={<Login />}></Route>
         <Route
-          path="/allso/auth/kakao_login"
+          path="/allso/auth/kakao-login"
           element={<AuthLogin></AuthLogin>}
         ></Route>
         <Route element={<PrivateRoute />}>
@@ -32,7 +34,7 @@ const Router = () => {
 
             <Route path="/allso/counter" element={<Counter />}></Route>
             <Route
-              path="/allso/counter_create"
+              path="/allso/counter-create"
               element={<CounterCreate></CounterCreate>}
             ></Route>
             <Route
@@ -46,6 +48,14 @@ const Router = () => {
           </Route>
           {/* </Route> */}
         </Route>
+        <Route
+          path="/allso/u/counter-detail/:counterid"
+          element={<UserCounterInfo></UserCounterInfo>}
+        ></Route>
+        <Route
+          path="/allso/u/problem/:counterid"
+          element={<UserCreateProblem></UserCreateProblem>}
+        ></Route>
         <Route path="*" element={<div>Error page</div>}></Route>
       </Routes>
     </BrowserRouter>
