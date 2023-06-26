@@ -19,5 +19,6 @@ export const FooterBtn = styled.button`
   width: 17.6rem;
   height: 3.3rem;
   background-color: ${({ theme }) => theme.colors.mainBlue};
+  font-size: ${({ theme }) => theme.fontSize.md};
   color: ${({ theme }) => theme.colors.white};
 `;
