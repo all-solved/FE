@@ -67,7 +67,7 @@ const UserCounterInfo = () => {
         </UserProblemMainWrapper>
         <UserProblemFooter
           btnText="컴플레인 등록하기"
-          onClickfn={() => navigate("/u/allso/problem/1")}
+          onClickfn={() => navigate("/allso/u/problem/1")}
         ></UserProblemFooter>
       </UserProblemLayout>
     </UserProblemWrapper>
