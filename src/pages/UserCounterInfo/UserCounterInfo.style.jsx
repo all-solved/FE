@@ -12,7 +12,7 @@ export const UserProblemWrapper = styled.div`
 export const UserProblemLayout = styled.main`
   display: flex;
   flex-direction: column;
-  width: 38.5rem;
+  width: 41.5rem;
 
   background-color: ${({ theme }) => theme.colors.mainBlue};
 `;
