@@ -62,12 +62,13 @@ html, body {
   height: 100%;
   // font-size:62.5%;
    font-family: 'Nanum Gothic', sans-serif;
+   font-size: 62.5%;
   /* font-family: 'Gomsin'; */
 }
 
 body{
     margin: 0 auto;
-    font-size: 62.5%;
+
 }
     a {
     text-decoration: none;
