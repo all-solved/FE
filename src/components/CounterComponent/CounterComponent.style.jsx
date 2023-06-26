@@ -6,7 +6,7 @@ export const DivWrapper = styled.div`
   justify-content: space-between;
   /* width: 100rem; */
   width: 90%;
-
+  height: fit-content;
   margin-bottom: 3rem;
 `;
 

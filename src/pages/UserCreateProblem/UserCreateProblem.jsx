@@ -64,11 +64,11 @@ const UserCreateProblem = () => {
           <AdditionalWrapper>
             <InputWrapper>
               <PhoneImg />
-              <AdditionalInput placeholder="전화번호 입력"></AdditionalInput>
+              <AdditionalInput placeholder="전화번호 입력(선택)"></AdditionalInput>
             </InputWrapper>
             <InputWrapper>
               <SMSImg />
-              <AdditionalInput placeholder="이메일 입력"></AdditionalInput>
+              <AdditionalInput placeholder="이메일 입력(선택)"></AdditionalInput>
             </InputWrapper>
           </AdditionalWrapper>
         </UserProblemMainWrapper>

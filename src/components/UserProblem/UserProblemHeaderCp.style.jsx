@@ -31,7 +31,7 @@ export const MainText = styled.h1`
 `;
 
 export const SubText = styled.h2`
-  font-size: ${({ theme }) => theme.fontSize.xs};
+  font-size: ${({ theme }) => theme.fontSize.sm};
   font-weight: ${({ theme }) => theme.fontBold.light};
   color: ${({ theme }) => theme.colors.white};
 `;

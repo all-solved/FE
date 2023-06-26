@@ -43,6 +43,8 @@ export const ProblemUrgencyOption = styled.option`
   text-align: center;
 
   padding: 0.5rem;
+
+  font-size: ${({ theme }) => theme.fontSize.sm};
 `;
 
 export const ContentWrapper = styled(CounterContentWrapper)`
