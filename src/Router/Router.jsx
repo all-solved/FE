@@ -19,7 +19,7 @@ const Router = () => {
       <Routes>
         <Route path="/allso/login" element={<Login />}></Route>
         <Route
-          path="/allso/auth/kakao-login"
+          path="/allso/auth/kakaologin"
           element={<AuthLogin></AuthLogin>}
         ></Route>
         <Route element={<PrivateRoute />}>

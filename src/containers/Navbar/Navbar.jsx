@@ -38,7 +38,7 @@ const Navbar = () => {
         </N.SideBox>
         {checkListMenu ? (
           <N.UnderSideBox>
-            <N.SideBox_List onClick={() => navigate("/allso/counter_create")}>
+            <N.SideBox_List onClick={() => navigate("/allso/counter-create")}>
               <N.SideBoxInnerSpan color="#000000">
                 소통창구 생성
               </N.SideBoxInnerSpan>
