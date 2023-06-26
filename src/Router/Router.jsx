@@ -13,6 +13,7 @@ import CounterDetail from "pages/Counter/CounterDetail/CounterDetail";
 import CounterEdit from "pages/Counter/CounterEdit/CounterEdit";
 import UserCounterInfo from "pages/UserCounterInfo/UserCounterInfo";
 import UserCreateProblem from "pages/UserCreateProblem/UserCreateProblem";
+import UserCompleteProblem from "pages/UserCompleteProblem/UserCompleteProblem";
 const Router = () => {
   return (
     <BrowserRouter>
@@ -55,6 +56,10 @@ const Router = () => {
         <Route
           path="/allso/u/problem/:counterid"
           element={<UserCreateProblem></UserCreateProblem>}
+        ></Route>
+        <Route
+          path="/allso/u/problem-complete"
+          element={<UserCompleteProblem></UserCompleteProblem>}
         ></Route>
         <Route path="*" element={<div>Error page</div>}></Route>
       </Routes>
