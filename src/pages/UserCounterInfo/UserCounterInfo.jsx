@@ -41,7 +41,7 @@ const UserCounterInfo = () => {
             </CounterTextWrapper>
             <CounterContentContainer>
               <CounterContentText>
-                소통창구 내용이 입력되는 공간입니다. 블라블라 안녕하세요
+                학생들을 위한 학교 전체 시설보수팀 소통창구
               </CounterContentText>
             </CounterContentContainer>
             <CounterTermsWrapper>
