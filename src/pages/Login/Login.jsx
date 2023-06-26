@@ -12,7 +12,7 @@ import {
 const Login = () => {
   const redirectURI =
     // "http://semtle.catholic.ac.kr:3000/allso/auth/kakao_login";
-    "http://localhost:3000/allso/auth/kakao_login";
+    "http://localhost:3000/allso/auth/kakaologin";
   const loginOnclick = async () => {
     try {
       loginService.login();
