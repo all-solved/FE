@@ -49,11 +49,11 @@ const Router = () => {
           {/* </Route> */}
         </Route>
         <Route
-          path="/allso/u/counter-info/:counterid"
+          path="/allso/u/counter-detail/:counterid"
           element={<UserCounterInfo></UserCounterInfo>}
         ></Route>
         <Route
-          path="/u/allso/create-problem"
+          path="/allso/u/problem/:counterid"
           element={<UserCreateProblem></UserCreateProblem>}
         ></Route>
         <Route path="*" element={<div>Error page</div>}></Route>

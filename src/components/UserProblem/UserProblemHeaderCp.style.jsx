@@ -9,7 +9,7 @@ export const UserProblemHeader = styled.header`
   display: flex;
   justify-content: start;
   height: 6.4rem;
-  width: 100%;
+
   margin: 1.2rem 1.6rem;
 `;
 export const HeaderImg = styled(BoldLogoWhite)`

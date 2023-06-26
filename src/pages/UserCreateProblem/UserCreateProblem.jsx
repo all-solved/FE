@@ -1,6 +1,7 @@
 import React from "react";
 import UserProblemHeaderCp from "components/UserProblem/UserProblemHeaderCp";
 import UserProblemFooter from "components/UserProblem/UserProblemFooter";
+
 import {
   UserProblemWrapper,
   UserProblemLayout,
@@ -17,6 +18,14 @@ import {
   ProblemUrgencySelect,
   ProblemUrgencyOption,
   ContentWrapper,
+  ContentTextarea,
+  AddImgBtn,
+  AdditionalWrapper,
+  InputWrapper,
+  SMSImg,
+  PhoneImg,
+  AddCircleImg,
+  AdditionalInput,
 } from "pages/UserCreateProblem/UserCreateProblem.style";
 const UserCreateProblem = () => {
   const handleComplainBtn = () => {
@@ -45,7 +54,23 @@ const UserCreateProblem = () => {
               <ProblemUrgencyOption>5</ProblemUrgencyOption>
             </ProblemUrgencySelect>
           </ProblemUrgencyWrapper>
-          <ContentWrapper></ContentWrapper>
+          <ContentWrapper>
+            <ContentTextarea></ContentTextarea>
+          </ContentWrapper>
+          <AddImgBtn type="button">
+            <AddCircleImg />
+            이미지 첨부
+          </AddImgBtn>
+          <AdditionalWrapper>
+            <InputWrapper>
+              <PhoneImg />
+              <AdditionalInput placeholder="전화번호 입력"></AdditionalInput>
+            </InputWrapper>
+            <InputWrapper>
+              <SMSImg />
+              <AdditionalInput placeholder="이메일 입력"></AdditionalInput>
+            </InputWrapper>
+          </AdditionalWrapper>
         </UserProblemMainWrapper>
         <UserProblemFooter
           btnText="컴플레인 접수"
