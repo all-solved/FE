@@ -27,9 +27,14 @@ import {
   AddCircleImg,
   AdditionalInput,
 } from "pages/UserCreateProblem/UserCreateProblem.style";
+
+import { useNavigate } from "react-router-dom";
+
 const UserCreateProblem = () => {
+  const navigate = useNavigate();
   const handleComplainBtn = () => {
     alert("컴플레인이 접수되었습니다");
+    navigate("/allso/u/problem-complete");
   };
   return (
     <UserProblemWrapper>
